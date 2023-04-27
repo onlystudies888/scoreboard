@@ -61,15 +61,10 @@ input{
     position: relative;
     right: 50px;
 }
-.score-add{
-    position: absolute;
-    top:75%;
-    right:10%;
-}
 .show-score{
     position: absolute;
     top:75%;
-    left:10%;
+    left:50%;
 }
 
 .pading{
