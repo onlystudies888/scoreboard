@@ -51,15 +51,19 @@ $(".show-score").mousedown(function () {
 
 
 //to add the scores of individuals to the total 
-$(".score-add").click(function () {
+$(document).keypress(function(e){
+    var key=e.which;
+    if(key == 13){
+        console.log(true)
     for (var i = 1; i < 5; i++) {
         var inputString = $("#num" + (i)).val();
         total[i - 1] += Number(inputString);
         $("#totalscore" + (i)).html(total[i - 1])
         $("#num" + i).val("")
     }
-
+    }
 })
+
 
 //toggle light and dark theme
 $(".light-dark").on("click", function () {
